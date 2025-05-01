@@ -1,8 +1,5 @@
-import skill.AttackSkill;
-import skill.BossAttackSkill;
-import skill.DefendSkill;
-import skill.HealSkill;
-import skill.Skill;
+package skill;
+
 
 public class SkillFactory {
     public Skill createSkill(String type) {
