@@ -5,7 +5,7 @@ public class MainGUI {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new GameGUI().setVisible(true);
+                GameGUI.getInstance().setVisible(true);
             }
         });
     }

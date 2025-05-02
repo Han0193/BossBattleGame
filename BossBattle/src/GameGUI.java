@@ -8,6 +8,8 @@ import skill.Skill;
 import command.UseSkillCommand;
 
 public class GameGUI extends JFrame {
+    private static GameGUI instance;
+
     private JPanel mainPanel;
     private JPanel characterSelectionPanel;
     private JPanel battlePanel;
@@ -26,7 +28,15 @@ public class GameGUI extends JFrame {
     private Character player;
     private Character boss;
 
-    public GameGUI() {
+
+    public static GameGUI getInstance() {
+        if (instance == null) {
+            instance = new GameGUI();
+        }
+        return instance;
+    } // For singleton
+
+    private GameGUI() {
         // Initialize components
         characterFactory = new CharacterFactory();
         gameManager = GameManager.getInstance();
