@@ -13,7 +13,7 @@ public class Mage extends Character {
         super(name, 80);
         addSkill(factory.createSkill("attack"));
         addSkill(factory.createSkill("heal"));
-        addSkill(factory.createSkill("defend"));
+//        addSkill(factory.createSkill("defend"));
 
     }
 
