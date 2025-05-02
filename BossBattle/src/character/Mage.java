@@ -11,7 +11,7 @@ public class Mage extends Character {
     SkillFactory factory = new SkillFactory();
     public Mage(String name) {
         super(name, 80);
-        addSkill(factory.createSkill("attack"));
+        addSkill(factory.createSkill("attack", 30));
         addSkill(factory.createSkill("heal"));
 //        addSkill(factory.createSkill("defend"));
 
